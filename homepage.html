@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNC Glow - Personalized Beauty & Wellness</title>
+  <meta name="description" content="SNC Glow: Your personalized skincare, haircare & bodycare recommendations for a glowing you!">
+  <style>
+    /* Reset & base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #fff0f5; }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #ffffffcc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #ff69b4;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header .buttons button {
+      margin-left: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    header .buttons button:hover {
+      background-color: #ff85c1;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 25vh; /* top 1/4 of the page */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #ffe0f0, #f0e6ff);
+      color: #444;
+      border-bottom: 2px solid #ffb6c1;
+    }
+    .hero h2 {
+      font-size: 28px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    /* Options section */
+    .options {
+      height: 75vh; /* bottom 3/4 of the page */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 40px;
+      gap: 20px;
+      background: linear-gradient(to bottom, #fdf0f5, #fffaf7);
+    }
+    .card {
+      flex: 1 1 250px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 40px 20px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      background: #fff0f5;
+    }
+    .card h3 {
+      font-size: 22px;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .options { flex-direction: column; height: auto; }
+      .hero { height: 20vh; }
+      header { flex-direction: column; gap: 10px; }
+      header h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>SNC Glow</h1>
+    <div class="buttons">
+      <button>Signup</button>
+      <button>Login</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Welcome to SNC Glow ✨</h2>
+      <p>Your personalized beauty & wellness journey starts here!</p>
+    </div>
+  </section>
+
+  <!-- Options Section -->
+  <section class="options">
+    <div class="card">
+      <h3>Skincare</h3>
+      <p>Discover the best products for your skin type.</p>
+    </div>
+    <div class="card">
+      <h3>Haircare</h3>
+      <p>Find products to make your hair healthy and glowing.</p>
+    </div>
+    <div class="card">
+      <h3>Bodycare</h3>
+      <p>Take care of your body with our recommended routines.</p>
+    </div>
+  </section>
+
+</body>
+</html>
